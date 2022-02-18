@@ -51,7 +51,7 @@
                         if (i == 0 || (i%3) == 0){
                             x+='<tr>';
                         }
-							x += '<td>' + myObj.data[0].videos[i].title + '<br /><video controls autoplay muted><source src="' + myObj.data[0].videos[i].stream1 + '" " type="application/x-mpegURL"> </td>';
+							x += '<td><img src="' + myObj.data[0].videos[i].driverManu + '" /> ' + myObj.data[0].videos[i].title + '<br /><video controls autoplay muted><source src="' + myObj.data[0].videos[i].stream1 + '" " type="application/x-mpegURL"> </td>';
 
                         //Probably not more than 3 rows of cameras (9)
                         if (i == 2 || (i%3) == 2){
@@ -60,7 +60,7 @@
                         
                     }
 					
-					/*for (i in myObj.data[1].videos) {
+		    /*for (i in myObj.data[1].videos) {
                         
                         //Probably not more than 3 rows of cameras (9)
                         if (i == 0 || (i%3) == 0){
